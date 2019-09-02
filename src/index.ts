@@ -15,3 +15,12 @@ export const invalidRequestReducer = (errors: ValidationErrorItem[]) => {
     statusCode: 400,
   }
 }
+
+export const kebabCase = input => {
+  return input.split(' ').join('-')
+}
+
+export const generateUri = input => {
+  const lcase = input.toLowerCase()
+  return kebabCase(lcase)
+}
