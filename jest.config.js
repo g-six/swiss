@@ -7,6 +7,6 @@ module.exports = {
   rootDir: './src',
   testEnvironment: 'node',
   testMatch: ['<rootDir>/**/*.test.ts'],
-  testPathIgnorePatterns: ['/node_modules/'],
+  testPathIgnorePatterns: ['/node_modules/', '/lib/'],
   verbose: true,
 }

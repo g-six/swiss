@@ -1,4 +1,17 @@
 import { ValidationErrorItem } from '@hapi/joi'
+import { readFileSync } from 'fs'
+import { safeLoad } from 'js-yaml'
+
+let lang
+
+export const loadLocale = file => {
+  try {
+    lang = safeLoad(readFileSync(file, 'utf8'))
+  } catch (e) {
+    console.error(e)
+  }
+  return lang
+}
 
 export const invalidRequestReducer = (errors: ValidationErrorItem[]) => {
   return {
