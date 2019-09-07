@@ -34,6 +34,9 @@ export const kebabCase = input => {
 }
 
 export const generateUri = input => {
-  const lcase = input.toLowerCase()
+  const lcase = input
+    .toLowerCase()
+    .replace(/[^\w ]+/g, '')
+    .replace(/ +/g, '-')
   return kebabCase(lcase)
 }

@@ -9,7 +9,7 @@ describe('loadLocale', () => {
 
   it('should log error to console', () => {
     try {
-      loadLocale('test.yaml')
+      loadLocale('no-such.yaml')
     } catch (e) {
       expect(typeof e).toEqual(typeof Error)
     }
