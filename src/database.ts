@@ -28,7 +28,9 @@ export const getDatabase = async () => {
 }
 
 export const disconnectDb = async () => {
-  db.instance.$pool.end()
+  if (db && db.instance) {
+    db.instance.$pool.end()
+  }
 }
 
 /* istanbul ignore next */
