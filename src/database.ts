@@ -30,6 +30,7 @@ export const getDatabase = async () => {
 export const disconnectDb = async () => {
   if (db && db.instance) {
     db.instance.$pool.end()
+    db = undefined
   }
 }
 
