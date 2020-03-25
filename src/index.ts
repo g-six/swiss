@@ -2,6 +2,7 @@ import { ValidationErrorItem } from '@hapi/joi'
 import { readFileSync } from 'fs'
 import { safeLoad } from 'js-yaml'
 import * as database from './database'
+import * as number_helper from './number-helper'
 
 let lang
 
