@@ -58,4 +58,4 @@ export const generatePassword = (length = 8, add_symbols = false) => {
 }
 
 export const Database = database
-export const { humanize } = number_helper
+export const NumberHelper = number_helper
