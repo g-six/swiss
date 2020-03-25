@@ -58,3 +58,4 @@ export const generatePassword = (length = 8, add_symbols = false) => {
 }
 
 export const Database = database
+export { number_helper }
