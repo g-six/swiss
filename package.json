@@ -32,7 +32,6 @@
   "homepage": "https://github.com/g-six/swiss#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
-    "@types/hapi__joi": "^16.0.12",
     "@types/jest": "^25.1.4",
     "@types/js-yaml": "^3.12.3",
     "@types/lodash": "^4.14.149",
@@ -57,10 +56,10 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@hapi/joi": "^17.1.1",
+    "joi": "^17.2.1",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.15",
-    "massive": "^6.2.0"
+    "lodash": "^4.17.20",
+    "massive": "^6.6.0"
   },
   "husky": {
     "hooks": {
