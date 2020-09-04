@@ -1,4 +1,4 @@
-import { ValidationErrorItem } from '@hapi/joi'
+import { ValidationErrorItem } from 'joi'
 import { readFileSync } from 'fs'
 import { safeLoad } from 'js-yaml'
 import * as database from './database'
