@@ -1,8 +1,16 @@
 export const humanize = (val: number) => {
-  if (val >= 1000000) {
-    return `${parseFloat(`${val / 1000000}`).toFixed(2)}M`
-  } else if (val >= 1000) {
-    return `${parseFloat(`${val / 1000}`).toFixed(2)}K`
+  const is_negative = val < 1
+  const num = Math.abs(val)
+
+  let humanized
+
+  if (num >= 1000000) {
+    humanized = `${parseFloat(`${num / 1000000}`).toFixed(2)}M`
+  } else if (num >= 1000) {
+    humanized = `${parseFloat(`${num / 1000}`).toFixed(2)}K`
+  } else {
+    humanized = num
   }
-  return val
+
+  return is_negative ? `-${humanized}` : humanized
 }

@@ -1,4 +1,4 @@
-import { ValidationErrorItem } from '@hapi/joi'
+import { ValidationErrorItem } from 'joi'
 import { invalidRequestReducer } from './'
 
 describe('Error handler', () => {
